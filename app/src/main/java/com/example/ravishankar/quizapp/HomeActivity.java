@@ -74,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
     {
         Context context=getApplicationContext();
         int time=Toast.LENGTH_SHORT;
-        String toast_message=getString(R.string.toast1)+points;
+        String toast_message=getString(R.string.toast1)+" "+points;
         if (toast != null) {
             toast.cancel();
         }
