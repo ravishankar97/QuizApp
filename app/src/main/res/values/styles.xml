@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="radio_question">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/twenty</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:padding">@dimen/six</item>
+        <item name="android:layout_marginEnd">@dimen/twenty</item>
+        <item name="android:layout_marginStart">@dimen/twenty</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+
+    </style>
+
+    <style name="question">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ten</item>
+        <item name="android:layout_marginStart">@dimen/six</item>
+        <item name="android:layout_marginEnd">@dimen/six</item>
+        <item name="android:textSize">@dimen/twenty_sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="radioGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/twenty</item>
+        <item name="android:layout_marginStart">@dimen/twenty</item>
+        <item name="android:layout_marginTop">@dimen/ten</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/twenty</item>
+        <item name="android:layout_marginStart">@dimen/twenty</item>
+        <item name="android:layout_marginTop">@dimen/ten</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:hint">answer</item>
+        <item name="android:padding">@dimen/ten</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+    <style name="radioButtons">
+        <item name="android:textSize">@dimen/twenty_sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/six</item>
+        <item name="android:paddingLeft">@dimen/six</item>
+        <item name="android:layout_height">wrap_content</item>
+       <item name="android:layout_width">wrap_content</item>
+    </style>
+
+</resources>

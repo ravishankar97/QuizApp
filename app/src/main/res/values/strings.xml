@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="start">Let\'s Start</string>
+    <string name="image">Scholar_image</string>
+    <string name="tech">Technical Quiz</string>
+    <string name="question_1">1. Which of the following is the latest version of Android?</string>
+    <string name="q1_option1">Nougat</string>
+    <string name="q1_option2">Kitkat</string>
+    <string name="q1_option3">Android P</string>
+    <string name="question_2">2. Which of the following is used to move from one activity to another?</string>
+    <string name="q2_option1">Intents</string>
+    <string name="q2_option2">Toasts</string>
+    <string name="q2_option3">Fragments</string>
+    <string name="question_3">3. Android is originally based on which kernel?</string>
+    <string name="question_4">4. Which company owns Android?</string>
+    <string name="question_5">5. What are the languages used in Android?</string>
+    <string name="choice_1">Kotlin</string>
+    <string name="choice_2">Python</string>
+    <string name="choice_3">Java</string>
+    <string name="choice_4">C#</string>
+    <string name="submit">Submit</string>
+    <string name="answer">answer</string>
+    <string name="toast1">Your score is </string>
+
+</resources>

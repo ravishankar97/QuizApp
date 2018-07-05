@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/scholar_image"
+        android:layout_width="@dimen/one_nine_zero"
+        android:layout_height="@dimen/one_two_eight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eighteen"
+        android:contentDescription="@string/image"
+        android:src="@drawable/scholar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="@dimen/eighty" />
+
+    <TextView
+        android:id="@+id/text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/tech"
+        android:textSize="@dimen/fifty_sp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/forty_eight"
+        android:background="@drawable/shape"
+        android:onClick="start"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirty_sp" />
+</RelativeLayout>
