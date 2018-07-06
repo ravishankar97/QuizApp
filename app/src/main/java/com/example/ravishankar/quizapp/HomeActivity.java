@@ -11,8 +11,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
-    public RadioGroup radioOption1;
-    public RadioGroup radioOption2;
+    public RadioGroup question1Answer;
+    public RadioGroup question2Answer;
     public RadioButton answer1;
     public RadioButton answer2;
     CheckBox checkBox1;
@@ -33,20 +33,20 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        radioOption1 = findViewById(R.id.firstGroup);
-        radioOption2 = findViewById(R.id.secondGroup);
-        if(radioOption1.getCheckedRadioButtonId()!=-1) {
-            selected1 = radioOption1.getCheckedRadioButtonId();
+        question1Answer = findViewById(R.id.firstGroup);
+        question2Answer = findViewById(R.id.secondGroup);
+        if(question1Answer.getCheckedRadioButtonId()!=-1) {
+            selected1 = question1Answer.getCheckedRadioButtonId();
             answer1 = findViewById(selected1);
-            if (answer1.getText().toString().equalsIgnoreCase("android p")) {
+            if (answer1.getText().toString().trim().equalsIgnoreCase("android p")) {
                 points += 1;
             }
         }
 
-        if(radioOption2.getCheckedRadioButtonId()!=-1) {
-            selected2 = radioOption2.getCheckedRadioButtonId();
+        if(question2Answer.getCheckedRadioButtonId()!=-1) {
+            selected2 = question2Answer.getCheckedRadioButtonId();
             answer2 = findViewById(selected2);
-            if (answer2.getText().toString().equalsIgnoreCase("intents"))
+            if (answer2.getText().toString().trim().equalsIgnoreCase("intents"))
                 points += 1;
         }
 
@@ -61,8 +61,7 @@ public class HomeActivity extends AppCompatActivity {
         checkBox2=findViewById(R.id.choice2);
         checkBox3 = findViewById(R.id.choice3);
         checkBox4=findViewById(R.id.choice4);
-        if (checkBox1.isChecked() && checkBox3.isChecked()) {
-            if(!checkBox2.isChecked()&&!checkBox4.isChecked())
+        if (checkBox1.isChecked() &&!checkBox2.isChecked()&& checkBox3.isChecked()&&!checkBox4.isChecked()) {
               points += 1;
         }
 
