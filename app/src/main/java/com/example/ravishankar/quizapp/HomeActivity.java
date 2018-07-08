@@ -15,13 +15,13 @@ public class HomeActivity extends AppCompatActivity {
     public RadioGroup question2Answer;
     public RadioButton answer1;
     public RadioButton answer2;
-    CheckBox checkBox1;
-    CheckBox checkBox2;
-    CheckBox checkBox3;
-    CheckBox checkBox4;
+    CheckBox kotlinCheck;
+    CheckBox pythonCheck;
+    CheckBox javaCheck;
+    CheckBox c_hashCheck;
     Toast toast;
-    EditText editText1;
-    EditText editText2;
+    EditText question3Answer;
+    EditText question4Answer;
     public int points;
     int selected1;
     int selected2;
@@ -50,18 +50,19 @@ public class HomeActivity extends AppCompatActivity {
                 points += 1;
         }
 
-        editText1 = findViewById(R.id.kernel);
-        if (editText1.getText().toString().equalsIgnoreCase("linux"))
-            points += 1;
-        editText2 = findViewById(R.id.owner);
-        if (editText2.getText().toString().equalsIgnoreCase("google"))
+        question3Answer = findViewById(R.id.kernel);
+        if (question3Answer.getText().toString().trim().equalsIgnoreCase("linux"))
             points += 1;
 
-        checkBox1 = findViewById(R.id.choice1);
-        checkBox2=findViewById(R.id.choice2);
-        checkBox3 = findViewById(R.id.choice3);
-        checkBox4=findViewById(R.id.choice4);
-        if (checkBox1.isChecked() &&!checkBox2.isChecked()&& checkBox3.isChecked()&&!checkBox4.isChecked()) {
+        question4Answer = findViewById(R.id.owner);
+        if (question4Answer.getText().toString().trim().equalsIgnoreCase("google"))
+            points += 1;
+
+        kotlinCheck = findViewById(R.id.choice1);
+        pythonCheck=findViewById(R.id.choice2);
+        javaCheck = findViewById(R.id.choice3);
+        c_hashCheck=findViewById(R.id.choice4);
+        if (kotlinCheck.isChecked() &&!pythonCheck.isChecked()&& javaCheck.isChecked()&&!c_hashCheck.isChecked()) {
               points += 1;
         }
 
@@ -73,11 +74,24 @@ public class HomeActivity extends AppCompatActivity {
     {
         Context context=getApplicationContext();
         int time=Toast.LENGTH_SHORT;
-        String toast_message=getString(R.string.toast1)+" "+points;
+        String toast_message;
+        if(points==0||points==1)
+            {
+        toast_message=getString(R.string.comment1)+"\n"+getString(R.string.toast1)+" "+points;
+        }
+        else if(points==4||points==5)
+            {
+                toast_message=getString(R.string.comment3)+"\n"+getString(R.string.toast1)+" "+points;
+                }
+                else
+                    {
+                        toast_message=getString(R.string.comment2)+"\n"+getString(R.string.toast1)+" "+points;
+                        }
+
         if (toast != null) {
             toast.cancel();
         }
-        toast = Toast.makeText(context, toast_message, time);
+         toast = Toast.makeText(context, toast_message, time);
         toast.show();
     }
 }

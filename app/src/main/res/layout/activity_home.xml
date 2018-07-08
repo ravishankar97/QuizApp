@@ -146,8 +146,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question5"
-                android:layout_marginStart="20dp"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginStart="@dimen/twenty"
                 android:layout_toEndOf="@id/leftCheck"
+                android:layout_toRightOf="@id/leftCheck"
                 android:orientation="vertical">
 
                 <CheckBox
